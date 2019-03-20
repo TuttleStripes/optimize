@@ -19,6 +19,6 @@ optimize().indexRatio(arr\[0\], 1) returns:
 optimize().forIndex(arr, 1) returns the array with the highest indexRatio at index 1
 
 optimize().allIndicesRatio(arr\[0\]) returns:
-  
+  np.nansum(indexRatio(arr\[0\], i) for i in np.arange(len(arr\[0\]))
 
   
