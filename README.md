@@ -10,8 +10,8 @@ Import with:
   
 # usage
 Say you have an array of numbers arr = np.array(  
-\[\[a, b, c\]  
- \[d, e, f\]\])  
+    \[\[a, b, c\]  
+    \[d, e, f\]\])  
 
 optimize().indexRatio(arr\[0\], 1) returns:  
   np.nansum(\[b/a, b/c\])
