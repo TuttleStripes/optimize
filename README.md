@@ -16,7 +16,7 @@ Say you have an array of numbers arr = np.array(
 optimize().indexRatio(arr\[0\], 1) returns:  
   np.nansum(\[b/a, b/c\])
 
-optimize().forIndex(arr, 1) returns the array with the highest indexRatio at index 1
+optimize().forIndex(arr, 1) returns the subarray of arr with the highest indexRatio at index 1
 
 optimize().allIndicesRatio(arr\[0\]) returns:  
   np.nansum(\[  
@@ -24,4 +24,5 @@ optimize().allIndicesRatio(arr\[0\]) returns:
     np.nansum(\[b/a, b/c\]),  
     np.nanssum(\[c/a, c/b\])\])  
 
+optimize().\_max(arr) returns the subarray of arr with the highest allIndiciesRatio.
   
