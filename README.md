@@ -6,23 +6,23 @@ Takes an array, and divides the value at an index across all other values, then 
 When working with multidimensional arrays, you can determine the array with the greatest ratio sum, either in total or against a certain array.
 
 Import with:
-  from optimize import optimize
+  import optimize
   
 # usage
 Say you have an array of numbers arr = np.array(  
     \[\[a, b, c\]  
     \[d, e, f\]\])  
 
-optimize().indexRatio(arr\[0\], 1) returns:  
+optimize.indexRatio(arr\[0\], 1) returns:  
   np.nansum(\[b/a, b/c\])
 
-optimize().forIndex(arr, 1) returns the subarray of arr with the highest indexRatio at index 1
+optimize.forIndex(arr, 1, indices=False) returns the subarray of arr with the highest indexRatio at index 1
 
-optimize().allIndicesRatio(arr\[0\]) returns:  
+optimize.allIndicesRatio(arr\[0\]) returns:  
   np.nansum(\[  
     np.nansum(\[a/b, a/c\]),  
     np.nansum(\[b/a, b/c\]),  
     np.nanssum(\[c/a, c/b\])\])  
 
-optimize().\_max(arr) returns the subarray of arr with the highest allIndiciesRatio.
+optimize.\_max(arr, indices=False) returns the subarray of arr with the highest allIndiciesRatio.
   
