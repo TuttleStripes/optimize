@@ -9,7 +9,13 @@ Import with:
   from optimize import optimize
   
 # usage
-Say you have an array of numbers:
-\[\[a, b, c\]
- \[d, e, f\]\]
-optimize().ratio
+Say you have an array of numbers arr = np.array(
+\[\[a, b, c\]  
+ \[d, e, f\]\])
+
+optimize().indexRatio(arr\[0\], 1) returns:
+  np.nansum(\[b/a, b/c\])
+
+optimize().forIndex(arr, 1) returns the array with the highest indexRatio at index 1
+
+  
